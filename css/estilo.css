@@ -1,5 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
+/* estilo.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  height: 60px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.item-menu a {
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.link-menu.f {
+  background-color: #804ba5;
+  color: white;
+}
+
+.link-menu.l {
+  background-color: #d56b8c;
+  color: white;
+}
+
+.link-menu.m {
+  background-color: #d44444;
+  color: white;
+}
+
+/* Seção principal */
+#principal {
+  background-color: rgb(77, 19, 77);
+  padding: 60px 80px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+#principal figure img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#sec_ctd {
+  max-width: 600px;
+}
+
+#sec_ctd h1 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#sec_ctd p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Seção de cartazes */
+#second {
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cartaz img {
+  max-height: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.cartaz img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #2d2d2d;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+#email a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+#social a img {
+  height: 20px;
+  margin-left: 10px;
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
+#social a img:hover {
+  filter: brightness(1.2);
+}
+
 body {
   font-family: 'Poppins';
 }
