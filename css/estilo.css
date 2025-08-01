@@ -1,180 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
-/* estilo.css */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
+
+#menu{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#principal img{
+  height: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
-  color: #fff;
-}
-
-/* Header */
-header {
-  background-color: #fff;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo img {
-  height: 60px;
-}
-
-#menu {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
-.item-menu a {
-  padding: 5px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.link-menu.f {
-  background-color: #804ba5;
-  color: white;
-}
-
-.link-menu.l {
-  background-color: #d56b8c;
-  color: white;
-}
-
-.link-menu.m {
-  background-color: #d44444;
-  color: white;
-}
-
-/* Seção principal */
-#principal {
-  background-color: rgb(77, 19, 77);
-  padding: 60px 80px;
+header {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#principal figure img {
+#logo img {
+  height: 50px;
+}
+
+nav ul#menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul#menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+nav ul#menu li a:hover {
+  background-color: #333;
+}
+
+nav ul#menu li a.f {
+  background-color: #5a3863;
+}
+
+nav ul#menu li a.l {
+  background-color: #de9255;
+}
+
+nav ul#menu li a.m {
+  background-color: #db4c5f;
+}
+
+main.f, main.l, main.m {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a3863;
+  color: white;
+}
+
+main.l {
+  background-color: #de9255;
+}
+
+main.m {
+  background-color: #db4c5f;
+}
+
+#principal {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#principal img#capa {
   width: 300px;
   height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-#sec_ctd {
-  max-width: 600px;
+  border-radius: 10px;
 }
 
 #sec_ctd h1 {
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#sec_ctd p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+#sec_ctd b {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+section#second {
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#descricao iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#descricao h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#acesso a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+#acesso.f, #acesso.l, #acesso.m {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#acesso.l {
+  background-color: #de9255;
+}
+
+#acesso.m {
+  background-color: #db4c5f;
+}
+
+#acesso.l a {
+  background-color: #fff;
+  color: #de9255;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#acesso.m a {
+  background-color: #fff;
+  color: #db4c5f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+main#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main#principal figure img {
+  max-height: 100px;
+  width: auto;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
 #sec_ctd p {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.6;
-  color: #ccc;
+  max-width: 800px;
 }
 
-/* Seção de cartazes */
-#second {
-  background-color: #fff;
-  padding: 60px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.cartaz img {
-  max-height: 250px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+.cartaz img.capa {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.cartaz img:hover {
+.cartaz img.capa:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+section#second {
+  padding: 60px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cartaz {
+  text-align: center;
+}
+
 footer {
-  background-color: #2d2d2d;
-  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
 }
 
-#email a {
-  color: #ccc;
+#contato {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+}
+
+#contato a {
+  color: white;
   text-decoration: none;
 }
 
-#social a img {
-  height: 20px;
+#social img {
+  width: 25px;
+  height: 25px;
   margin-left: 10px;
-  filter: brightness(0.9);
-  transition: filter 0.3s;
+  vertical-align: middle;
 }
-
-#social a img:hover {
-  filter: brightness(1.2);
-}
-
-body {
-  font-family: 'Poppins';
-}
-
-header, #principal, #second, #contato, #stream {
-	
-}
-
-.link-menu {
-  color: #fff;
-  background-color: #555;
-}
-
-.f {
-  background-color: #5b305a;
-}
-
-.l {
-  background-color: #e49756;
-}
-
-.m {
-  background-color: #e04b5a;
-}
-
-main {
-  background-color: #333;
-  color: #ddd;
-}
-
-h1, h2 {
-  font-family: 'Amatic SC';
-}
-
-#second a{
-  color: #fff;
-}
-
-footer {
-  background-color: #333;
-  color: #ddd;
-}
-
